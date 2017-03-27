@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ProxyEndpoint name="default">
-
+	<!-- made a change -->
 	<DefaultFaultRule name="all">
 		<AlwaysEnforce>true</AlwaysEnforce>
 
 		<Step>
 			<Condition>flow.apigee.error.code = null</Condition>
 			<Name>AssignMessage.SetInternalServerErrorVariables</Name>
+		</Step>
 		<Step>
 			<Name>JavaScript.LogToLoggly</Name>
 		</Step>
