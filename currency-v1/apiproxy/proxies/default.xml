@@ -7,7 +7,6 @@
 		<Step>
 			<Condition>flow.apigee.error.code = null</Condition>
 			<Name>AssignMessage.SetInternalServerErrorVariables</Name>
-		</Step>
 		<Step>
 			<Name>JavaScript.LogToLoggly</Name>
 		</Step>
